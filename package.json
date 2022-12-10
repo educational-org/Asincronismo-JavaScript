@@ -1,0 +1,19 @@
+{
+  "name": "asincronismo-javascript",
+  "version": "1.0.0",
+  "description": "la importancia del uso de este concepto en JS. Las principales elementos que tiene JS para manejar el asincronismo:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanCCampo95/Asincronismo-JavaScript.git"
+  },
+  "author": "Juan Camilo Campo T",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuanCCampo95/Asincronismo-JavaScript/issues"
+  },
+  "homepage": "https://github.com/JuanCCampo95/Asincronismo-JavaScript#readme"
+}

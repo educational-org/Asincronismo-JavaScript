@@ -48,3 +48,21 @@ JavaScript acaba de convertirse en Multi-Threaded(Multi-Hilo) con la capacidad d
 
 JavaScript ahora sería: asíncrono y no bloqueante, con un bucle de eventos (concurrencia) implementado con un unico hilo para sus interfaces de inputs y outputs.
 
+# EventLoop
+El búcle de eventos es un patrón de diseño que espera y distribuye eventos o mesnajes en un programa. (Tarea asignada para mover del Task Queue al Stack, solo si el Stack está vacio).
+
+### - Memory Heap:
+Los objetos son asignados a un montículo (espacio grande en memoria no organizado).
+
+### - Call Stack (Pila)
+Apila de forma organizada las instrucciones de nuestro programa.
+
+### - Task Queue
+Cola de tareas, se maneja la concurrencia, se agregan las tareas que ya están listas para pasar al stack (pila) El stack debe estar vacio.
+
+### - MicroTask Queue
+Las promesas tiene otra forma de ejecutarse y una prioridad superior.
+
+### Web API's
+JavaScript del lado del cliente: setTimeout, XMLHttpRequest, File Reader, DOM. 
+Node: files system, https
