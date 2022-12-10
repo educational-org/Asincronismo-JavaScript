@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JuanCCampo95/Asincronismo-JavaScript/issues"
   },
-  "homepage": "https://github.com/JuanCCampo95/Asincronismo-JavaScript#readme"
+  "homepage": "https://github.com/JuanCCampo95/Asincronismo-JavaScript#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }

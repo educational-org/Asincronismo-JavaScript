@@ -66,3 +66,11 @@ Las promesas tiene otra forma de ejecutarse y una prioridad superior.
 ### Web API's
 JavaScript del lado del cliente: setTimeout, XMLHttpRequest, File Reader, DOM. 
 Node: files system, https
+
+# XMLHttp Request
+Es un valor que nos permitirá manejar de mejor forma las peticiones a servidores y es fundamental para trabajar en APIS con javascript. Nos permitirá hacer estas peticiones a recursos XML o JSON.
+
+    revisar ./src/callback/challenge.js
+
+## Códigos de estado de respuesta HTTP
+    https://developer.mozilla.org/es/docs/Web/HTTP/Status
