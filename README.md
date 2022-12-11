@@ -74,3 +74,8 @@ Es un valor que nos permitirá manejar de mejor forma las peticiones a servidore
 
 ## Códigos de estado de respuesta HTTP
     https://developer.mozilla.org/es/docs/Web/HTTP/Status
+
+# Promises
+El Objeto Promise es usado para computaciones asíncronas. Una promesa prepresenta un valor que puede estar disponible ahora, mañana o nunca.
+
+    revisar ./src/promise/index.js
