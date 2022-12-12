@@ -79,3 +79,30 @@ Es un valor que nos permitirá manejar de mejor forma las peticiones a servidore
 El Objeto Promise es usado para computaciones asíncronas. Una promesa prepresenta un valor que puede estar disponible ahora, mañana o nunca.
 
     revisar ./src/promise/index.js
+
+# Async & Await
+Existe una sintaxis especial para trabajar con promesas de una forma más confortable, llamada “async/await”. Es sorprendentemente fácil de entender y usar.
+
+### Funciones async
+Comencemos con la palabra clave async. Puede ser ubicada delante de una función como aquí:
+
+    ```
+    async function f() {
+    return 1;
+    }
+    ```
+La palabra “async” ante una función significa solamente una cosa: que la función siempre devolverá una promesa. Otros valores serán envueltos y resueltos en una promesa automáticamente.
+
+### Await
+La sintaxis:
+
+    ```
+    // funciona solamente dentro de funciones async
+    let value = await promise;
+    ```
+
+await hace que JavaScript espere hasta que la promesa responda y devuelve su resultado.
+
+ver a detalle en ./src/async/index.js
+
+recursos: https://es.javascript.info/async-await
