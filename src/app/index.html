@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./js/main.js"></script>
 </head>
 <style>
     @media (min-width:1400px){
@@ -69,21 +70,11 @@
 
   <div class="bg-white">
     <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Last YouTube Videos</h2>
-      <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+      <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Algunos paises solicitados a la API Football</h2>
+      <p>Esto es solo un ejercicio de practica para la implementación de fetch, para poder realizar de manera asíncrona peticiones a una API real. Por lo tanto, esta UI es solo a manera de ejemplo y no representa un trabajo profesional.</p>
+      <div id ="plantilla-container"  class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-6 xl:gap-x-8">
         <!-- content -->
-         <div class="group relative">
-          <div
-            class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
-            <img src="" alt="" class="w-full">
-          </div>
-          <div class="mt-4 flex justify-between">
-            <h3 class="text-sm text-gray-700">
-              <span aria-hidden="true" class="absolute inset-0"></span>
-              title
-            </h3>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
@@ -123,6 +114,7 @@
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
