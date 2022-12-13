@@ -1,0 +1,53 @@
+body{
+    background-color: #f5f5f5;
+    background-image: url('../assets/divider.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.container-featured-match h1{
+ font-size: 40px;
+ font-weight: 900;
+}
+.flags-and-score{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.flags-and-score img{
+    width: 100px;
+}
+.flags-and-score {
+    font-weight: bold;
+}
+.score-feature-match{
+    font-size: 54px;
+    font-weight: 500;
+}
+.vs-feature-match{
+    font-size: 34px;
+    font-weight: 700;
+}
+.date-and-stadium,.stageName{
+    width: 100%;
+    text-align: center;
+}
+.stageName{
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: rgb(109, 0, 51);
+}
+
+@media (min-width:1400px){
+    .main-container{
+        display: grid;
+        grid-template-columns:1fr;
+        margin: 0 15%;
+        padding: 0 20px;
+    }
+}
