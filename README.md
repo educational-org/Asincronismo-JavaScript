@@ -1,5 +1,7 @@
 # Asincronismo con JavaScript
 
+Abrir para ver ejercicio: https://juanccampo95.github.io/Asincronismo-JavaScript/src/app/
+
 ## Aprenderemos:
 
 la importancia del uso de este concepto en JS. Las principales elementos que tiene JS para manejar el asincronismo:

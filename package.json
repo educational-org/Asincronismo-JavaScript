@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "callback": "node src/callback/challenge.js",
-    "deploy": "gh-pages -d app"
+    "deploy": "gh-pages -d src/app"
   },
   "repository": {
     "type": "git",
