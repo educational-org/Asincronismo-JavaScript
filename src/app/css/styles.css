@@ -51,3 +51,40 @@ body{
         padding: 0 20px;
     }
 }
+@media (max-width:550px){
+    .main-container{
+        display: grid;
+        grid-template-columns:1fr;
+        margin: 0;
+        padding: 0;
+    }
+    .container-featured-match h1{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .flags-and-score{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    } 
+    .flags-and-score img{
+        width: 60px;
+    }
+    .score-feature-match{
+        font-size:20px;
+        font-weight: 500;
+    }
+    .vs-feature-match{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .nameTeam{
+        font-size:12px;
+    }
+    .date-and-stadium,.stageName{
+        padding:1em 0;
+        font-size: 12px;
+    }
+}

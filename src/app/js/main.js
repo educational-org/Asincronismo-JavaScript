@@ -35,8 +35,8 @@ async function getFeatureMatch(urlAPI,dateMatch){
         var date = new Date(match.LocalDate)
         var options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
         let time =`
-            ${date.getUTCHours()}:
-            ${date.getUTCMinutes() == "0"? "00":none}:
+            ${date.getUTCHours() - 8} :
+            ${date.getUTCMinutes() == "0"? "00":none} :
             ${date.getUTCSeconds() == "0"? "00":none}`
         console.log(date)
 
@@ -48,16 +48,16 @@ async function getFeatureMatch(urlAPI,dateMatch){
             </div>
             <div class="flags-and-score">
                 <img src="${flags[0].flag}" alt="">
-                <span>${match.Home.ShortClubName}</span>
+                <span class="nameTeam">${match.Home.ShortClubName}</span>
                 <span class="score-feature-match">${match.HomeTeamScore || 0}</span>
                 <span class="vs-feature-match">VS</span>
                 <span class="score-feature-match">${match.AwayTeamScore || 0}</span>
-                <span>${match.Away.ShortClubName}</span>
+                <span class="nameTeam">${match.Away.ShortClubName}</span>
                 <img src="${flags[1].flag}" alt="">
             </div>
             <div class="date-and-stadium">
                 <p> ${date.toLocaleDateString("es-ES", options)} - ${match.Stadium.Name[0].Description} </p>
-                <p>${time}</p>
+                <p>Horario de Inicio CO: ${time}</p>
             </div>
         `
         feature_container.innerHTML = template
