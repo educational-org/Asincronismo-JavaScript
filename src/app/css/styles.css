@@ -38,7 +38,13 @@ body{
     margin-top: 2em;
     font-weight: bold;
 }
-
+.contenedor-matches{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+}
 .footer{
     background-color: rgb(109, 0, 51);
 }
@@ -47,7 +53,7 @@ body{
     .main-container{
         display: grid;
         grid-template-columns:1fr;
-        margin: 0 15%;
+        margin: 0 10%;
         padding: 0 20px;
     }
 }
