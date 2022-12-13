@@ -48,13 +48,13 @@ async function getFeatureMatch(urlAPI,dateMatch){
                 </p>
             </div>
             <div class="flags-and-score">
-                <img src="${flags[0].flag}" alt="">
+                <img src="./assets/argentina.png" alt="">
                 <span class="nameTeam">${match.Home.ShortClubName}</span>
                 <span class="score-feature-match">${match.HomeTeamScore || 0}</span>
                 <span class="vs-feature-match">VS</span>
                 <span class="score-feature-match">${match.AwayTeamScore || 0}</span>
                 <span class="nameTeam">${match.Away.ShortClubName}</span>
-                <img src="${flags[1].flag}" alt="">
+                <img src="./assets/banderacroacia.png" alt="">
             </div>
             <div class="date-and-stadium">
                 <p> ${date.toLocaleDateString("es-ES", options)} - ${match.Stadium.Name[0].Description} </p>
