@@ -83,4 +83,7 @@ async function getFlags(url,home,away){
 //Para ejecutar, se pasa la fecha en el formato: 2022-12-09 YYYY-MM-DD
 getFeatureMatch(API,'2022-12-13')
 
-
+setInterval(()=>{
+    getFeatureMatch(API,'2022-12-13')
+    console.log('Actualizado')
+},30000);
