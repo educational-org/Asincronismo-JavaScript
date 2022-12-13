@@ -32,19 +32,21 @@ async function getFeatureMatch(urlAPI,dateMatch){
         const response = await fetchData(`${urlAPI}/schedule?date=${dateMatch}`,optionsMatch)
         const match = response.matches[0]
         const flags = await getFlags(APIFlags,match.Home.ShortClubName,match.Away.ShortClubName)
-        var date = new Date(match.LocalDate)
-        var options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+        let date = new Date(match.LocalDate)
+        let options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
         let time =`
             ${date.getUTCHours() - 8} :
-            ${date.getUTCMinutes() == "0"? "00":none} :
-            ${date.getUTCSeconds() == "0"? "00":none}`
-        console.log(date)
+            ${date.getUTCMinutes() == "0"? "00":none}`
+
+        console.log(match)
 
         let template = `
             <h1>${match.CompetitionName[0].Description}</h1>
             <p>Partido Destacado</p>
             <div class="stageName">
-                <p>${match.StageName[0].Description} ${match.MatchTime || ""}</p>
+                <p>${match.StageName[0].Description} 
+                    <br><span style="color: #5ddb37 ">${match.MatchTime == "0'"? " Resultado Final": match.MatchTime || " Aún no comienza"}</span>
+                </p>
             </div>
             <div class="flags-and-score">
                 <img src="${flags[0].flag}" alt="">
@@ -57,7 +59,7 @@ async function getFeatureMatch(urlAPI,dateMatch){
             </div>
             <div class="date-and-stadium">
                 <p> ${date.toLocaleDateString("es-ES", options)} - ${match.Stadium.Name[0].Description} </p>
-                <p>Horario de Inicio CO: ${time}</p>
+                <p>Horario de Inicio CO ${time}</p>
             </div>
         `
         feature_container.innerHTML = template
