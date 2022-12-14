@@ -127,10 +127,10 @@ async function getNextMatch(urlAPI,dateMatch){
 
 
 //Para ejecutar, se pasa la fecha en el formato: 2022-12-09 YYYY-MM-DD
-getFeatureMatch(API,'2022-12-13')
+getFeatureMatch(API,'2022-12-14')
 //solicito el partido del día 14
 getNextMatch(API,'2022-12-14')
 setInterval(()=>{
-    getFeatureMatch(API,'2022-12-13')
+    getFeatureMatch(API,'2022-12-14')
     console.log('Actualizado')
 },30000);
